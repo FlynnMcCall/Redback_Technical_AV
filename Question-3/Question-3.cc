@@ -25,11 +25,9 @@ int main(){
         // Each char is in hex => 4 bits
         // WheelRR starts at index 32, length 16 => substr( 32/4 , 16 / 4)
 
-        
         string RR_sub_str = payload.substr(8, 4);
         unsigned long WheelSpeedRR_Raw = stoul( RR_sub_str, 0, 16);
-
-        // The candump file specifies the input is little endian (WHICH IS REALLY NICE)
+        
         double WheelSpeedRR = ((double)WheelSpeedRR_Raw) * 0.1;
 
         outfile << u_time << ": " << WheelSpeedRR << endl;

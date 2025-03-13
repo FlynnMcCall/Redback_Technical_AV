@@ -1,11 +1,7 @@
-/// Question 1: This question requests you to fix all compile errors in the main function and any classes. Address
-/// the comments given inside the code.
-/// Your code should run and compile without any warnings or errors.
 
 /*
 I coded this without changing the compiler flags. On my computer that meant everything is set to C++98. 
-
-Anyways I changed the compile flags, I used C++17 for Q2 onwards, but like, this already works ¯\_(ツ)_/¯
+but like, this already works ¯\_(ツ)_/¯
 */
 
 #include <iostream>
