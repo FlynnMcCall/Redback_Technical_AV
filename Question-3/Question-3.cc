@@ -10,7 +10,7 @@ int main(){
     ofstream outfile("output.txt");
     //ofstream debug_outfile("outfile.csv");
 
-    int i = 0;
+    //int i = 0;
     string u_time;
     string can_version;
     string message;

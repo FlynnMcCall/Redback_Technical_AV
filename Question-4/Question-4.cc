@@ -20,9 +20,15 @@
 // Forward declaration. Don't worry about this.
 class Actor;
 
+
 class Observer {
 public:
 	virtual void ReactToEvent(Actor* actor) = 0;
+};
+
+class MockObserver : public Observer {
+	public:
+	MOCK_METHOD(void, ReactToEvent, (Actor* actor), (override));
 };
 
 class Actor {
@@ -49,8 +55,6 @@ public:
 	}
 
 };
-
-// This will not compile until you implement MockObserver.
 
 TEST(ActorTest, ObserversAreCalled) {
 	auto observer = std::make_shared<MockObserver>();
