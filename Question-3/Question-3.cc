@@ -8,7 +8,7 @@ using namespace std;
 int main(){
     ifstream log("candump.log");
     ofstream outfile("output.txt");
-    ofstream debug_outfile("outfile.csv");
+    //ofstream debug_outfile("outfile.csv");
 
     int i = 0;
     string u_time;
@@ -38,7 +38,7 @@ int main(){
         double WheelSpeedRR = ((double)WheelSpeedRR_Raw) * 0.1;
 
         outfile << u_time << ": " << WheelSpeedRR << endl;
-        debug_outfile << i++ << ", " << WheelSpeedRR << "\n";
+        //debug_outfile << i++ << ", " << WheelSpeedRR << "\n";
     }
 
     return 0;
